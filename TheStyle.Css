@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -55,7 +56,7 @@ button:active {
 
 .container {
     text-align: center;
-    background-color: #8A2BE2;
+    background-color: #800080; /* Cor do container alterada para roxo */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -120,12 +121,12 @@ footer a:hover {
 
 /* Dark mode style */
 body.dark-mode {
-    background-color: #121212;
+    background-color: #9400D3; /* Cor de fundo alterada para #9400D3 */
     color: #e0e0e0;
 }
 
 body.dark-mode .container {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* Mantenha esta cor ou altere conforme necessário */
 }
 
 body.dark-mode footer {
