@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>toshy-wares | Link Bypasser</title>
+    <title>Toshy Wares | Link Bypasser</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,29 +10,45 @@
     <meta name="author" content="XToshy" />
     <link rel="stylesheet" href="TheStyle.Css">    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body class="dark-mode">
-    <div class="mode-toggle">
-        <button id="toggleMode">Light Mode</button>
+
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop class="video-background">
+        <source src="https://i.imgur.com/qCHSZDU.mp4" type="video/mp4">
+        Seu navegador não suporta a exibição de vídeos.
+    </video>
+
+    <!-- Caixa com o título na parte superior -->
+    <div class="top-box">
+        <h3>Toshy Wares | Link Bypasser</h3>
     </div>
-    <div class="container">
-        <h1>Toshy Ware's | Link Bypasser</h1>
-        <input type="text" id="linkInput" placeholder="Paste the link you want to bypass...">
-        <button id="bypassButton">Bypass</button>
-        <div id="result" style="display:none;">
-            <p>Bypassed Link:</p>
-            <input type="text" id="bypassedLink" readonly>
-            <button id="redirectButton">Redirect</button>
-            <button id="copyButton">Copy</button>
+
+    <!-- Caixa principal com a entrada e os botões -->
+    <main class="box">
+        <img src="https://cdn.discordapp.com/avatars/1239976708405465151/78d74e305e7d877653c55b0b633fb1e6.webp?size=2048" alt="Profile Image" class="profile-image">
+        <div class="input-group">
+            <input type="text" id="linkInput" class="input" placeholder="Paste the link you want to bypass...">
+            <button id="bypassButton" class="btn">Bypass</button>
         </div>
-    </div>
-    <footer>
-        <p>Supported Links: 
-            <a href="https://dsc.gg/toshyruz" target="">Supported Links On Discord</a>
+        <div id="result" class="result hidden">
+            <p>Bypassed Link:</p>
+            <input type="text" id="bypassedLink" class="input" readonly>
+            <div class="button-group">
+                <button id="redirectButton" class="btn">Redirect</button>
+                <button id="copyButton" class="btn">Copy</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Créditos na parte inferior -->
+    <div class="credits">
+        <p>
+            Supported Links: <br>
+            <a href="https://dsc.gg/toshyruz" target="_blank" class="footer-link">Supported Links On Discord</a> <br>
+            Discord: <a href="https://dsc.gg/toshy" target="_blank" class="footer-link">Toshy Community</a> <br>
+            Toshy Wares: <a href="https://twoxiter.github.io/ToshyWares/" target="_blank" class="footer-link">Updated Executors</a>
         </p>
-        <p>Discord: <a href="https://dsc.gg/toshy" target="_blank">Toshy Community</a></p>
-        <p>Toshy Ware's: <a href="https://twoxiter.github.io/ToshyWares/" target="">Updated Executors</a></p>
-    </footer>
-    <script src="TheScript.Js"></script>
+    </div>
+
+    <script src="TheScript.js"></script>
 </body>
 </html>
